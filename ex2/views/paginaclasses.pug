@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    .w3-container
+      h2 Classes (nivel 1)
+      table.w3-table-all.w3-hoverable
+        thead
+          tr.w3-light-grey
+            th Titulo da Classe
+            th Codigo da Classe
+            th Status de Classe
+          each element in classes
+                tr
+                    td 
+                        a(href="/classes/"+classes.id)=element.titulo
+                    td=element.codigo
+                    td=element.status
+
+                    
+
+    h6
+        a(href="/") <center>Voltar à <i>Homepage</i></center>
+    hr
