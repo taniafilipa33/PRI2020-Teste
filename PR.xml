@@ -1,0 +1,27 @@
+﻿1.
+No exercicio 1 foi efetuado o tratamento de dados so ficheiro JSON fornecido:
+    -adicionar aspas n parametro ref em cada objeto;
+    -adicionar virgula que faltam dentro de alguns objetos;
+    -adicionar aspas em volta de algumas das datas;
+    -como pedido no enunciado foi gerado o atributo _id em cada objeto que contém o valor de ref mas em vez de / tem _
+Para importar para uma nova BD em Mongo,foi usado o comando: mongoimport -d Casamentos -c Casamentos --jsonArray -f casamentos.json
+
+Este exercicio foi criado como uma aplicacao usando o express, sendo que o codigo se encontra no ficheiro api.js.
+A pasta models contem o schema de um casamento.
+A pasta controllers as queries usadas no Mongo.
+Algumas queries não apresentam o desejado devido às regex, em que alguns sitios fucnionam mas ao fazer o get não trabalham como deviam.
+2.
+As respostas ao exercicio de aquecimento:
+Pergunta 1
+http://clav-api.di.uminho.pt/v2/classes?nivel=3&token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExMTExMjIyMyIsImxldmVsIjoyLCJlbnRpZGFkZSI6ImVudF9BM0VTIiwiZW1haWwiOiJwcmkyMDIwQHRlc3RlLnVtaW5oby5wdCIsImlhdCI6MTYxMDk4NzI1MSwiZXhwIjoxNjExMDE2MDUxfQ.VHepO68V-Wa3IMdqcFmDAONeTsp_9Ev4KV52FlpKw6_3J7eBNTV93yOfXnmIQNv_n0BSAJbu89fWjW0bATHqFgBO5ooGVraCtAfpBRA5V0B6ohOSVZ-nzgv00hgCIBdaJB0d-zt8bos5eVP3Fp4HBQaQvaSw5gH9x9ZTdhYoP4iUNbZAHPTRk9tu2fuzmFdpNhDGEB0NjAROiC_JfkVmJYghsR6YCS4lh5FyFBbKpjKPfG0EnUZ5vlzjuqfNnpr8KjrH8ZgEkRE2lhNdIiF5WAr6FeSMuPwZmTjooCnB427cc0Zn--x8Wcb-VCHGBgKcQw4ADWTt2aar665lpIcccg
+
+Pergunta 2 
+http://clav-api.di.uminho.pt/v2/classes?nivel=4&token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExMTExMjIyMyIsImxldmVsIjoyLCJlbnRpZGFkZSI6ImVudF9BM0VTIiwiZW1haWwiOiJwcmkyMDIwQHRlc3RlLnVtaW5oby5wdCIsImlhdCI6MTYxMDk4NzI1MSwiZXhwIjoxNjExMDE2MDUxfQ.VHepO68V-Wa3IMdqcFmDAONeTsp_9Ev4KV52FlpKw6_3J7eBNTV93yOfXnmIQNv_n0BSAJbu89fWjW0bATHqFgBO5ooGVraCtAfpBRA5V0B6ohOSVZ-nzgv00hgCIBdaJB0d-zt8bos5eVP3Fp4HBQaQvaSw5gH9x9ZTdhYoP4iUNbZAHPTRk9tu2fuzmFdpNhDGEB0NjAROiC_JfkVmJYghsR6YCS4lh5FyFBbKpjKPfG0EnUZ5vlzjuqfNnpr8KjrH8ZgEkRE2lhNdIiF5WAr6FeSMuPwZmTjooCnB427cc0Zn--x8Wcb-VCHGBgKcQw4ADWTt2aar665lpIcccg
+
+Pergunta 3
+http://clav-api.di.uminho.pt/v2/classes/c750.30/descendencia?token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExMTExMjIyMyIsImxldmVsIjoyLCJlbnRpZGFkZSI6ImVudF9BM0VTIiwiZW1haWwiOiJwcmkyMDIwQHRlc3RlLnVtaW5oby5wdCIsImlhdCI6MTYxMDk4NzI1MSwiZXhwIjoxNjExMDE2MDUxfQ.VHepO68V-Wa3IMdqcFmDAONeTsp_9Ev4KV52FlpKw6_3J7eBNTV93yOfXnmIQNv_n0BSAJbu89fWjW0bATHqFgBO5ooGVraCtAfpBRA5V0B6ohOSVZ-nzgv00hgCIBdaJB0d-zt8bos5eVP3Fp4HBQaQvaSw5gH9x9ZTdhYoP4iUNbZAHPTRk9tu2fuzmFdpNhDGEB0NjAROiC_JfkVmJYghsR6YCS4lh5FyFBbKpjKPfG0EnUZ5vlzjuqfNnpr8KjrH8ZgEkRE2lhNdIiF5WAr6FeSMuPwZmTjooCnB427cc0Zn--x8Wcb-VCHGBgKcQw4ADWTt2aar665lpIcccg
+
+Pergunta 4
+http://clav-api.di.uminho.pt/v2/classes/c750.30.001/procRel?token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjExMTExMjIyMyIsImxldmVsIjoyLCJlbnRpZGFkZSI6ImVudF9BM0VTIiwiZW1haWwiOiJwcmkyMDIwQHRlc3RlLnVtaW5oby5wdCIsImlhdCI6MTYxMDk4NzI1MSwiZXhwIjoxNjExMDE2MDUxfQ.VHepO68V-Wa3IMdqcFmDAONeTsp_9Ev4KV52FlpKw6_3J7eBNTV93yOfXnmIQNv_n0BSAJbu89fWjW0bATHqFgBO5ooGVraCtAfpBRA5V0B6ohOSVZ-nzgv00hgCIBdaJB0d-zt8bos5eVP3Fp4HBQaQvaSw5gH9x9ZTdhYoP4iUNbZAHPTRk9tu2fuzmFdpNhDGEB0NjAROiC_JfkVmJYghsR6YCS4lh5FyFBbKpjKPfG0EnUZ5vlzjuqfNnpr8KjrH8ZgEkRE2lhNdIiF5WAr6FeSMuPwZmTjooCnB427cc0Zn--x8Wcb-VCHGBgKcQw4ADWTt2aar665lpIcccg
+
+Este exercicio 2 não ficou completo porque não consegui extrai as informações do website a partir do axios como esperava apesar de com o postman não ter tido qualquer problema
